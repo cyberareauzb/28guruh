@@ -1,0 +1,7 @@
+.foot {
+    grid-area: foot;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

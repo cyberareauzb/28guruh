@@ -1,0 +1,32 @@
+.side {
+  grid-area: side;
+}
+.logowrapper{
+    height: 60px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+}
+.side > ul{
+    padding: 25px;
+    list-style: none;
+}
+.side > ul > li{
+    font-size: 20px;
+    padding: 10px;
+}
+.side .ul a{
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-weight: 600;
+}
+
+@media (max-width: 960px) {
+    .side{
+        position: fixed;
+        top: 0;
+        left: -400px;
+        width: 350px;
+        height: 100vh;
+    }
+}

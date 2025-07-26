@@ -1,0 +1,33 @@
+.mainWrapper {
+  display: grid;
+  background-color: #f5f5f5;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 80px 1fr 50px;
+  height: 100vh;
+  gap: 15px;
+  grid-template-areas:
+    "side head"
+    "side main"
+    "side foot"
+  ;
+}
+
+.mainWrapper>* {
+  background-color: #fff;
+}
+
+.main {
+  grid-area: main;
+  padding: 30px;
+}
+
+@media (max-width: 960px) {
+  .mainWrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "main"
+      "foot"
+    ;
+  }
+}
